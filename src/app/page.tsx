@@ -179,13 +179,13 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-gray-50 to-yellow-100 dark:from-gray-900 dark:via-yellow-900/20 dark:to-gray-800">
+          <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-gray-50 to-teal-100 dark:from-gray-900 dark:via-cyan-900/20 dark:to-gray-800">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg z-50 border-b border-yellow-200 dark:border-yellow-800 shadow-lg">
+              <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg z-50 border-b border-cyan-200 dark:border-cyan-800 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 bg-clip-text text-transparent">
+                              <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-600 via-cyan-500 to-teal-400 bg-clip-text text-transparent">
                 Saurav Portfolio
               </h1>
             </div>
@@ -200,8 +200,8 @@ export default function Portfolio() {
                       onClick={() => scrollToSection(item)}
                       className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                         activeSection === item
-                          ? "text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900/30 shadow-md transform scale-105"
-                          : "text-gray-700 dark:text-gray-300 hover:text-yellow-600 dark:hover:text-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/20"
+                                              ? "text-cyan-600 dark:text-cyan-400 bg-cyan-100 dark:bg-cyan-900/30 shadow-md transform scale-105"
+                    : "text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/20"
                       }`}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -230,13 +230,13 @@ export default function Portfolio() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-yellow-200 dark:border-yellow-800">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-cyan-200 dark:border-cyan-800">
               {["home", "about", "skills", "projects", "contact"].map(
                 (item) => (
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-yellow-600 dark:hover:text-yellow-400 w-full text-left rounded-lg hover:bg-yellow-50 dark:hover:bg-yellow-900/20"
+                                          className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 w-full text-left rounded-lg hover:bg-cyan-50 dark:hover:bg-cyan-900/20"
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </button>
@@ -251,19 +251,19 @@ export default function Portfolio() {
       <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
         {/* Background Animation */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-teal-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
           <div className="absolute top-40 left-40 w-80 h-80 bg-gray-800 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="text-center">
             <div className="mb-8">
-              <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-black p-1 shadow-2xl">
-                <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-5xl font-bold text-transparent bg-gradient-to-r from-yellow-600 to-black bg-clip-text relative overflow-hidden">
+              <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-cyan-500 via-teal-400 to-slate-800 p-1 shadow-2xl">
+                                  <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-5xl font-bold text-transparent bg-gradient-to-r from-cyan-600 to-slate-800 bg-clip-text relative overflow-hidden">
                   <div className="relative">
                     S
-                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-black bg-clip-text animate-pulse">
+                                          <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-slate-800 bg-clip-text animate-pulse">
                       S
                     </div>
                   </div>
@@ -273,21 +273,21 @@ export default function Portfolio() {
 
             <h1 className="text-4xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               Hi, I&apos;m{" "}
-              <span className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 bg-clip-text text-transparent animate-gradient">
+                              <span className="bg-gradient-to-r from-cyan-600 via-cyan-500 to-teal-400 bg-clip-text text-transparent animate-gradient">
                 Saurav
               </span>
             </h1>
 
             <div className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-4">
               <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 px-4 py-2 rounded-full">
-                <Trophy className="w-5 h-5 text-yellow-500" />
+                <Trophy className="w-5 h-5 text-cyan-500" />
                 Full Stack Developer @ TCS
               </span>
             </div>
 
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
               I turn coffee into code and{" "}
-              <span className="text-yellow-600 dark:text-yellow-400 font-semibold">bugs into features</span>
+                              <span className="text-cyan-600 dark:text-cyan-400 font-semibold">bugs into features</span>
               . Currently teaching AI to be funnier than me{" "}
               <span className="text-sm">(it&apos;s winning 🤖)</span>
             </p>
@@ -295,7 +295,7 @@ export default function Portfolio() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="group px-8 py-4 bg-gradient-to-r from-yellow-500 to-black hover:from-yellow-600 hover:to-gray-900 text-white rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-slate-800 hover:from-cyan-600 hover:to-gray-900 text-white rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <span className="flex items-center gap-2">
                   <Rocket className="w-5 h-5 group-hover:animate-bounce" />
@@ -304,7 +304,7 @@ export default function Portfolio() {
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="px-8 py-4 border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-black rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="px-8 py-4 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Let&apos;s Chat!
               </button>
@@ -313,7 +313,7 @@ export default function Portfolio() {
             <div className="flex justify-center space-x-6 mb-12">
               <a
                 href="#"
-                className="p-3 text-gray-600 dark:text-gray-400 hover:text-yellow-600 transition-all duration-300 hover:scale-110 bg-white/80 dark:bg-gray-800/80 rounded-full shadow-lg"
+                className="p-3 text-gray-600 dark:text-gray-400 hover:text-cyan-600 transition-all duration-300 hover:scale-110 bg-white/80 dark:bg-gray-800/80 rounded-full shadow-lg"
               >
                 <Github className="w-6 h-6" />
               </a>
@@ -364,7 +364,7 @@ export default function Portfolio() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               About This Human 🧑‍💻
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-black mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-slate-800 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -437,7 +437,7 @@ export default function Portfolio() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               My Superpowers 🦸‍♂️
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-black mx-auto mb-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-slate-800 mx-auto mb-4"></div>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Here are some skills I&apos;ve collected like Pokémon cards. Still working on the legendary ones! 🃏
             </p>
@@ -468,7 +468,7 @@ export default function Portfolio() {
                         key={i} 
                         className={`w-4 h-4 ${
                           i < 4 
-                            ? 'text-yellow-400 fill-current' 
+                            ? 'text-cyan-400 fill-current' 
                             : 'text-gray-300 dark:text-gray-600'
                         }`} 
                       />
@@ -508,7 +508,7 @@ export default function Portfolio() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               My Digital Offspring 👶💻
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-black mx-auto mb-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-slate-800 mx-auto mb-4"></div>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               These are some projects I&apos;ve birthed into the world. They may not be perfect, but they&apos;re mine! 
               <span className="text-sm">(Please don&apos;t judge the variable names 🙈)</span>
@@ -577,7 +577,7 @@ export default function Portfolio() {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               🚧 More awesome projects coming soon! Currently brewing in my coffee-powered dev environment.
             </p>
-            <button className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-black text-white rounded-xl font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <button className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-slate-800 text-white rounded-xl font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
               <span className="flex items-center gap-2">
                 <Zap className="w-5 h-5" />
                 Stay Tuned for More Magic!
@@ -594,7 +594,7 @@ export default function Portfolio() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Let&apos;s Create Something Epic! 🚀
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-black mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-slate-800 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Got a crazy idea? Need someone to turn your &quot;what if&quot; into &quot;wow, it works!&quot;? 
               Let&apos;s chat! I promise to bring my A-game and unlimited dad jokes. 😄
@@ -667,7 +667,7 @@ export default function Portfolio() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="group px-8 py-4 bg-gradient-to-r from-yellow-500 to-black hover:from-yellow-600 hover:to-gray-900 text-white rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-slate-800 hover:from-cyan-600 hover:to-gray-900 text-white rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   <span className="flex items-center gap-2">
                     <Rocket className="w-5 h-5 group-hover:animate-bounce" />
@@ -714,7 +714,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-yellow-200 dark:border-yellow-700">
+      <footer className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-cyan-200 dark:border-cyan-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <p className="text-gray-600 dark:text-gray-400 mb-2">
