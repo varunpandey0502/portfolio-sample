@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Your Name",
-  description: "A modern portfolio website showcasing my projects and skills",
-  keywords: ["portfolio", "developer", "projects", "skills"],
-  authors: [{ name: "Your Name" }],
+  title: "Saurav Saurav - Full Stack Developer & AI Enthusiast",
+  description: "Coffee-powered full-stack developer at TCS, turning bugs into features and teaching AI to be funnier than me. Expert in React, Node.js, and panic-driven development.",
+  keywords: ["saurav", "full stack developer", "TCS", "AI learning", "react", "node.js", "javascript", "portfolio", "funny developer"],
+  authors: [{ name: "Saurav Saurav" }],
   openGraph: {
-    title: "Portfolio - Your Name",
-    description: "A modern portfolio website showcasing my projects and skills",
+    title: "Saurav Saurav - Full Stack Developer & AI Enthusiast",
+    description: "Coffee-powered full-stack developer at TCS, turning bugs into features and teaching AI to be funnier than me.",
     type: "website",
   },
 };
