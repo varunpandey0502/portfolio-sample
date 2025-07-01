@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #8b5cf6;
-  --secondary: #ec4899;
-  --accent: #3b82f6;
+  --primary: #eab308;
+  --secondary: #000000;
+  --accent: #facc15;
   --muted: #f8fafc;
   --border: #e2e8f0;
 }
@@ -21,9 +21,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary: #a855f7;
-    --secondary: #f472b6;
-    --accent: #60a5fa;
+    --primary: #fbbf24;
+    --secondary: #000000;
+    --accent: #fde047;
     --muted: #1e293b;
     --border: #475569;
   }
@@ -154,7 +154,7 @@ body {
 
 /* Gradient text effect */
 .gradient-text {
-  background: linear-gradient(45deg, #8b5cf6, #ec4899, #3b82f6);
+  background: linear-gradient(45deg, #eab308, #000000, #facc15);
   background-size: 200% 200%;
   animation: gradient 3s ease infinite;
   -webkit-background-clip: text;
@@ -164,12 +164,12 @@ body {
 
 /* Custom button glow effect */
 .btn-glow {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.3);
   transition: box-shadow 0.3s ease;
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 30px rgba(234, 179, 8, 0.5);
 }
 
 /* Glassmorphism effect */
