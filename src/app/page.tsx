@@ -10,7 +10,6 @@ import {
   Code,
   Palette,
   Database,
-  Globe,
   ChevronDown,
   Menu,
   X,
